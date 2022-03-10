@@ -1,18 +1,25 @@
 DL_ACES_Setup v01.1
 
 - DESCRIPTION
-This script creates a simple button in Nuke, to set the ACES setup quickly.
+This script creates a simple button in Nuke, to set the ACES workflow quickly.
 
 --------------------------------------------------------------------------------------------------------
 - HOW TO INSTALL
-In your ".nuke" folder, open the "init.py" and "menu.py". If it doesn't exist, just simply create a new
-"txt" file, give the name and put ".py" as an extension.
+To download from Github, click on the green button (called Code), then click on "Download ZIP".
+Probably the folder should be named as "DL_ACES_Setup-main", so rename it as "DL_ACES_Setup" (if necessary), 
+then move it to your ".nuke" directory.
 
-In your "init.py", put your own path to access the "DL_ACES_Setup" folder:
-nuke.pluginAddPath('C:/DL_ACES_Setup')
+In your ".nuke" folder, open the files "init.py" and "menu.py". If it doesn't exist, just simply create a new
+"txt" file, give their respective names, and put ".py" as an extension (for both files).
+
+In your "init.py":
+nuke.pluginAddPath('./DL_ACES_Setup')
 
 In your "menu.py":
 from DL_ACES_Setup import *
+
+You just to need to make sure that your folder ("DL_ACES_Setup"), has the same name and the same 
+directory when you are setting in your "init.py".
 
 --------------------------------------------------------------------------------------------------------
 - INFOS
